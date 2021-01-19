@@ -1,0 +1,65 @@
+.bg-img {
+  background-image: url("../../drawables/drug-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-img .bg-tint {
+  background-color: #00000044;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-img .bg-tint .jumbo-text-container {
+  color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.bg-img .bg-tint .jumbo-text-container h1 {
+  font-size: 72px;
+}
+
+.bg-img .bg-tint .jumbo-text-container p {
+  font-size: 18px;
+  margin-top: 1em;
+  letter-spacing: 0.01em;
+}
+
+.bg-img .bg-tint .get-started-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  margin: 3em 0;
+}
+
+.bg-img .bg-tint .get-started-container .get-started-link {
+  background-color: #dfdfdf;
+  text-decoration: none;
+  color: #00000099;
+  padding: 1em 2em;
+  border-radius: 2px;
+}
+
+.bg-img .bg-tint .get-started-container .get-started-link:hover {
+  color: #000000;
+  background-color: #ffffff;
+  transition-duration: 0.6s;
+}
