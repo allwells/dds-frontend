@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,31 +15,31 @@ const Footer = () => {
             </p>
             <ul className="social-media">
               <li>
-                <a
+                <Link
                   className="facebook social-handle"
                   target="_blank"
-                  href="#facebook.com"
+                  to="https://facebook.com"
                 >
                   Facebook
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="twitter social-handle"
                   target="_blank"
-                  href="#twitter.com"
+                  to="https://twitter.com"
                 >
                   Twitter
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="instagram social-handle"
                   target="_blank"
-                  href="#instagram.com"
+                  to="https://instagram.com"
                 >
                   Instagram
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -55,29 +56,29 @@ const Footer = () => {
             <h2>Pages</h2>
             <ul className="pages">
               <li>
-                <a className="services-page page-link" href="#services">
+                <Link className="services-page page-link" to="/services">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="about-page page-link" href="#about">
+                <Link className="about-page page-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="contact-page page-link" href="#contact">
+                <Link className="contact-page page-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="privacy-page page-link" href="#privacy-policy">
+                <Link className="privacy-page page-link" to="/privacy-policy">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="terms-page page-link" href="#terms-of-service">
+                <Link className="terms-page page-link" to="/terms-of-service">
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

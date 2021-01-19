@@ -1,5 +1,6 @@
 import React from "react";
 import "./Jumbotron.css";
+import { Link } from "react-router-dom";
 
 const Jumbotron = () => {
   return (
@@ -13,9 +14,9 @@ const Jumbotron = () => {
             <p>of drugs in Nigeria.</p>
           </div>
           <div className="get-started-container">
-            <a className="get-started-link" href="#signup">
+            <Link className="get-started-link" to="/signup">
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>

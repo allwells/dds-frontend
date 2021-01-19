@@ -1,0 +1,40 @@
+.about-header-bg {
+  background-image: url("../drawables/vitamin-c-medium.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-header-bg .about-header-bg-tint {
+  background-color: #00000044;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 2em;
+}
+
+.about-header-bg .about-header-bg-tint h1 {
+  font-size: 58px;
+  color: #00000099;
+  letter-spacing: 0.1em;
+  box-shadow: 6px 6px 0px #00000099;
+  background-color: #00000033;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+}
+
+.about-header-bg .about-header-bg-tint h1:hover {
+  transition-duration: 0.2s;
+}
+
+.about-header-bg .about-header-bg-tint h1:active {
+  box-shadow: 2px 2px 0px #00000099;
+}

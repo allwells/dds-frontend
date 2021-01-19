@@ -131,3 +131,7 @@
   border-top: 2px solid #a5770d;
   padding-left: 2em;
 }
+
+.footer-bg .footer-copyright p {
+  letter-spacing: 0.2em;
+}
