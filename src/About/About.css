@@ -38,3 +38,67 @@
 .about-header-bg .about-header-bg-tint h1:active {
   box-shadow: 2px 2px 0px #00000099;
 }
+
+.about-content {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: auto;
+  padding: 2em 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content .container {
+  background-color: #bdbdbd33;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  padding: 3em;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.about-content .container:hover {
+  box-shadow: 3px 3px 6px #0f0f0f66;
+  transition-duration: 0.6s;
+}
+
+.about-content .container p {
+  text-align: justify;
+  margin: 2em 0;
+  line-height: 1.6em;
+}
+
+.about-content .content-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 8px 8px 0px #0f0f0f33;
+  cursor: pointer;
+}
+
+.about-content .content-image:hover {
+  transition-duration: 0.2s;
+}
+
+.about-content .content-image:active {
+  box-shadow: 4px 4px 0px #0f0f0f33;
+}
+
+.about-content .first-content .first-content-image {
+  background-image: url("../drawables/drug-capsule-03.jpg");
+}
+
+.about-content .second-content .second-content-image {
+  background-image: url("../drawables/drug-capsule-02.jpg");
+  width: 100%;
+}
+
+.about-content .third-content .third-content-image {
+  background-image: url("../drawables/drug-capsule-04.jpg");
+}
