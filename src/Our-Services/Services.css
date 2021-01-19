@@ -1,3 +1,7 @@
+.services-header-padding {
+  padding-top: 6em;
+}
+
 .services-header-bg {
   background-image: url("../drawables/vitamin-c-medium.jpg");
   background-position: center;

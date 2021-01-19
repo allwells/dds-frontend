@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 
 const ServicesHeader = () => {
   return (
-    <div>
+    <div className="services-header-padding">
       <div className="services-header-bg">
         <div className="services-header-bg-tint">
           <h1>Services</h1>

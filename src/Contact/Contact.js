@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 
 const ContactHeader = () => {
   return (
-    <div>
+    <div className="contact-header-padding">
       <div className="contact-header-bg">
         <div className="contact-header-bg-tint">
           <h1>Contact</h1>

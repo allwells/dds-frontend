@@ -17,6 +17,7 @@ body {
   width: 100%;
   height: fit-content;
   padding: 0 1em;
+  position: fixed;
 }
 
 .nav-bar .logo {

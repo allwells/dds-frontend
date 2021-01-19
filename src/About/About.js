@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 
 const AboutHeader = () => {
   return (
-    <div>
+    <div className="about-header-padding">
       <div className="about-header-bg">
         <div className="about-header-bg-tint">
           <h1>About</h1>
