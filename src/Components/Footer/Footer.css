@@ -1,0 +1,133 @@
+.footer-bg {
+  background-color: #000000dd;
+  height: 60vh;
+  width: 100%;
+}
+
+.footer-bg .footer-content {
+  background-color: #bf8a0f;
+  color: #00000099;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3em;
+}
+
+.footer-bg .footer-content h2 {
+  margin-bottom: 1.5em;
+}
+
+.footer-bg .footer-content p {
+  text-align: start;
+}
+
+.footer-bg .footer-content .about-section {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 3em;
+}
+
+.footer-bg .footer-content .about-section .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 1.5em;
+}
+
+.footer-bg .footer-content .about-section li {
+  list-style: none;
+}
+
+.footer-bg .footer-content .about-section .social-media .social-handle {
+  text-decoration: none;
+  color: #00000088;
+  font-size: 12px;
+  border: 2px solid #00000088;
+  padding: 0.4em 0.6em;
+  margin: 0 0.5em 0 0;
+}
+
+.footer-bg .footer-content .about-section .social-media .facebook:hover {
+  color: #2e436f;
+  border-color: #4867aa;
+  background-color: #4867aa44;
+}
+
+.footer-bg .footer-content .about-section .social-media .twitter:hover {
+  color: #336797;
+  border-color: #4c9be5;
+  background-color: #4c9be544;
+}
+
+.footer-bg .footer-content .about-section .social-media .instagram:hover {
+  color: #9d2438;
+  border-color: #fb3958;
+  background-color: #fb395844;
+}
+
+.footer-bg .footer-content .contact-section {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 3em;
+}
+
+.footer-bg .footer-content .contact-section p {
+  margin-bottom: 1em;
+}
+
+.footer-bg .footer-content .pages-section {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 3em;
+}
+
+.footer-bg .footer-content .pages-section .pages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1.2em;
+}
+
+.footer-bg .footer-content .pages-section .pages li {
+  margin: 0.5em 0;
+}
+
+.footer-bg .footer-content .pages-section .pages li:hover {
+  color: #000000;
+  transition-duration: 0.6s;
+}
+
+.footer-bg .footer-content .pages-section .pages .page-link {
+  text-decoration: none;
+  color: #00000099;
+}
+
+.footer-bg .footer-content .pages-section .pages .page-link:hover {
+  color: #000000;
+  transition-duration: 0.6s;
+}
+
+.footer-bg .footer-copyright {
+  background-color: #bf8a0f;
+  color: #00000099;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-items: flex-start;
+  border-top: 2px solid #a5770d;
+  padding-left: 2em;
+}

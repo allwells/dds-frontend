@@ -1,12 +1,14 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Jumbotron from "./components/Jumbotron";
+import NavBar from "./Components/NavBar";
+import Jumbotron from "./Components/Jumbotron";
+import Footer from "../Components/Footer/Footer";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
       <Jumbotron />
+      <Footer />
     </div>
   );
 };
