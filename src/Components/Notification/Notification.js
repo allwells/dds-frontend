@@ -1,4 +1,5 @@
 import React from "react";
+import "./Notification.css";
 
 const Notification = ({ messageType, message }) => {
   if (message === null) {
