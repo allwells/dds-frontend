@@ -1,4 +1,4 @@
-.about-header-bg {
+.services-header-bg {
   background-image: url("../drawables/vitamin-c-medium.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-.about-header-bg .about-header-bg-tint {
+.services-header-bg .services-header-bg-tint {
   background-color: #00000044;
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +21,7 @@
   padding-left: 2em;
 }
 
-.about-header-bg .about-header-bg-tint h1 {
+.services-header-bg .services-header-bg-tint h1 {
   font-size: 58px;
   color: #00000099;
   letter-spacing: 0.1em;
@@ -31,16 +31,16 @@
   border-radius: 3px;
 }
 
-.about-header-bg .about-header-bg-tint h1:hover {
+.services-header-bg .services-header-bg-tint h1:hover {
   cursor: pointer;
   transition-duration: 0.2s;
 }
 
-.about-header-bg .about-header-bg-tint h1:active {
+.services-header-bg .services-header-bg-tint h1:active {
   box-shadow: 2px 2px 0px #00000099;
 }
 
-.about-content {
+.services-content {
   background-color: #f5f5f5;
   width: 100%;
   height: auto;
@@ -49,8 +49,8 @@
   justify-content: space-between;
 }
 
-.about-content .container {
-  background-color: #bdbdbd33;
+.services-content .container {
+  /* background-color: #bdbdbd33; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,21 +59,22 @@
   padding: 3em;
   border-radius: 5px;
   width: 31%;
+  box-shadow: 0px 0px 4px #00000022;
 }
 
-.about-content .container:hover {
-  box-shadow: 3px 3px 6px #0f0f0f66;
+.services-content .container:hover {
+  box-shadow: 0px 0px 8px #0f0f0f66;
   transition-duration: 0.6s;
 }
 
-.about-content .container p {
+.services-content .container p {
   text-align: justify;
   margin: 2em 0;
   line-height: 1.6em;
   color: #000000cc;
 }
 
-.about-content .content-image {
+.services-content .content-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,22 +85,22 @@
   cursor: pointer;
 }
 
-.about-content .content-image:hover {
+.services-content .content-image:hover {
   transition-duration: 0.2s;
 }
 
-.about-content .content-image:active {
+.services-content .content-image:active {
   box-shadow: 4px 4px 0px #0f0f0f33;
 }
 
-.about-content .first-content .first-content-image {
+.services-content .first-content .first-content-image {
   background-image: url("../drawables/drug-capsule-03.jpg");
 }
 
-.about-content .second-content .second-content-image {
+.services-content .second-content .second-content-image {
   background-image: url("../drawables/drug-capsule-02.jpg");
 }
 
-.about-content .third-content .third-content-image {
+.services-content .third-content .third-content-image {
   background-image: url("../drawables/drug-capsule-04.jpg");
 }
