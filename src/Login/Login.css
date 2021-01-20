@@ -88,8 +88,8 @@
   .sub-parent-layout
   .login-btn-section
   .login-btn {
-  background-color: #f5f5f5bb;
-  color: #000000dd;
+  background-color: #bf8a0f;
+  color: #f5f5f5bb;
   padding: 0.5em 2em;
   height: 35px;
   font-size: 14px;
@@ -105,8 +105,7 @@
   .sub-parent-layout
   .login-btn-section
   .login-btn:hover {
-  background-color: #f5f5f5;
-  color: #000000;
+  background-color: #e4a514;
   transition-duration: 0.3s;
 }
 
