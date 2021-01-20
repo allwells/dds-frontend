@@ -1,0 +1,172 @@
+.img-bg {
+  background-image: url("../drawables/gold-stripes.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-bg .form-bg-tint {
+  background-color: #000000dd;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.img-bg .form-bg-tint .parent-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 55%;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout {
+  background-color: #f5f5f5bb;
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  border-radius: 3px;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout h2 {
+  font-size: 18px;
+  color: #000000dd;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout .input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 1.2em;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout .inputs {
+  background-color: #f5f5f5bb;
+  color: #000000dd;
+  height: 40px;
+  width: 90%;
+  border-radius: 3px;
+  padding: 0 1em;
+  border: none;
+  box-shadow: 0px 0px 3px #000000dd;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout .inputs:focus {
+  outline: none;
+  box-shadow: 0px 0px 6px #000000dd;
+  transition-duration: 0.5s;
+}
+
+.img-bg .form-bg-tint .parent-layout.sub-parent-layout .login-btn-section {
+  width: 100%;
+  height: fit-content;
+  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.img-bg
+  .form-bg-tint
+  .parent-layout
+  .sub-parent-layout
+  .login-btn-section
+  .login-btn {
+  background-color: #f5f5f5bb;
+  color: #000000dd;
+  padding: 0.5em 2em;
+  height: 35px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 6px 6px 0px #000000dd;
+}
+
+.img-bg
+  .form-bg-tint
+  .parent-layout
+  .sub-parent-layout
+  .login-btn-section
+  .login-btn:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+  transition-duration: 0.3s;
+}
+
+.img-bg
+  .form-bg-tint
+  .parent-layout
+  .sub-parent-layout
+  .login-btn-section
+  .login-btn:active {
+  outline: none;
+  box-shadow: 3px 3px 0px #000000dd;
+}
+
+.img-bg .form-bg-tint .parent-layout .sub-parent-layout .forgot-pwd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.img-bg
+  .form-bg-tint
+  .parent-layout
+  .sub-parent-layout
+  .forgot-pwd
+  .forgot-pwd-link {
+  color: #000000aa;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 0.5em 0;
+}
+
+.img-bg
+  .form-bg-tint
+  .parent-layout
+  .sub-parent-layout
+  .forgot-pwd
+  .forgot-pwd-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.img-bg .form-bg-tint .parent-layout .signup-link-section {
+  background-color: #f5f5f5bb;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  border-radius: 3px;
+}
+
+.img-bg .form-bg-tint .parent-layout .signup-link-section .signup-link {
+  color: #000000aa;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.img-bg .form-bg-tint .parent-layout .signup-link-section .signup-link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
