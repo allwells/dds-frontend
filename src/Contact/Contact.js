@@ -30,7 +30,7 @@ const ContactContent = () => {
               <div className="name-container textfields">
                 <label htmlFor="fullname">Name</label>
                 <input
-                  placeholder="eg. John Doe"
+                  placeholder="eg.John Doe"
                   className="fullname inputs"
                   name="fullname"
                   id="fullname"
@@ -39,7 +39,7 @@ const ContactContent = () => {
               <div className="company-container textfields">
                 <label htmlFor="company">Company</label>
                 <input
-                  placeholder="eg. Harrylands Clinic"
+                  placeholder="eg.Harrylands Clinic"
                   className="company inputs"
                   name="company"
                   id="company"
@@ -48,7 +48,7 @@ const ContactContent = () => {
               <div className="email-container textfields">
                 <label htmlFor="email">Email</label>
                 <input
-                  placeholder="eg. johndoe@gmail.com"
+                  placeholder="eg.johndoe@gmail.com"
                   className="email inputs"
                   name="email"
                   id="email"
