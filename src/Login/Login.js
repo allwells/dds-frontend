@@ -92,7 +92,7 @@ const FormContents = ({ divClassName }) => {
       <ForgotPasswordLink
         divClassName="forgot-pwd"
         className="forgot-pwd-link"
-        toLink="#forgot-password"
+        toLink="/login"
         text="Forgot password?"
       />
     </div>
@@ -118,7 +118,7 @@ const LoginForm = () => {
   return (
     <div className="img-bg">
       <div className="form-bg-tint">
-        <Form divClassName="parent-layout" method="get" action="#dashboard" />
+        <Form divClassName="parent-layout" method="get" action="/login" />
       </div>
     </div>
   );
