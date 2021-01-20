@@ -43,3 +43,130 @@
 .contact-header-bg .contact-header-bg-tint h1:active {
   box-shadow: 2px 2px 0px #00000099;
 }
+
+.form-bg {
+  width: 100%;
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.form-bg .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.form-bg .contact-form .input-fields-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-bg .contact-form .input-fields-container .inputs {
+  height: 40px;
+  width: 95%;
+  padding: 0 1em;
+  border: none;
+  border-radius: 3px;
+  color: #00000099;
+  letter-spacing: 0.1em;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 2px #00000099;
+}
+
+.form-bg .contact-form .input-fields-container .inputs:hover {
+  transition-duration: 0.6s;
+}
+
+.form-bg .contact-form .input-fields-container .inputs:focus {
+  box-shadow: 0px 0px 8px #00000099;
+  outline: none;
+}
+
+.form-bg .contact-form .textfields {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.form-bg .contact-form .input-fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.form-bg .contact-form label {
+  margin-bottom: 0.5em;
+  color: #00000099;
+}
+
+.form-bg .contact-form .input-fields-container .message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-bg .contact-form .input-fields-container .message-container .message {
+  height: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.1em;
+  color: #00000099;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 2px #00000099;
+}
+
+.form-bg
+  .contact-form
+  .input-fields-container
+  .message-container
+  .message:hover {
+  transition-duration: 0.6s;
+}
+
+.form-bg
+  .contact-form
+  .input-fields-container
+  .message-container
+  .message:focus {
+  box-shadow: 0px 0px 8px #00000099;
+  outline: none;
+}
+
+.form-bg .contact-form .submit-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  place-self: center;
+  margin: 1em 0;
+}
+
+.form-bg .contact-form .submit-btn .submit {
+  background-color: #00000033;
+  color: #00000066;
+  font-size: 14px;
+  border: none;
+  padding: 0.5em 1em;
+  height: 40px;
+  width: 20%;
+  border-radius: 3px;
+  box-shadow: 6px 6px 0px #000000dd;
+}
+
+.form-bg .contact-form .submit-btn .submit:hover {
+  color: #000000dd;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.form-bg .contact-form .submit-btn .submit:active {
+  box-shadow: 2px 2px 0px #000000dd;
+  outline: none;
+}
