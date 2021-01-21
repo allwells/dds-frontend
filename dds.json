@@ -1,0 +1,92 @@
+{
+  "drugs": [
+    {
+      "id": 1,
+      "serialNumber": "j1s2o3n45s6e7r8v9e0r",
+      "drugName": "typicode",
+      "manufactureDate": "Date",
+      "expiryDate": "Date",
+      "NAFDAC": "NAF-n2a4f6d8a1c0",
+      "netWeight": "2.4g",
+      "type": "local",
+      "producer": "Handel Corp"
+    },
+    {
+      "id": 2,
+      "serialNumber": "s2e4r6v8e0r2j4s6o8n",
+      "drugName": "drug",
+      "manufactureDate": "Date",
+      "expiryDate": "Date",
+      "NAFDAC": "NAF-f3a6d9n1a3f",
+      "netWeight": "7.4g",
+      "type": "local",
+      "producer": "Osborn"
+    },
+    {
+      "id": 3,
+      "serialNumber": "j1s2s3o4e5n6r7v8e9r",
+      "drugName": "shhh",
+      "manufactureDate": "Date",
+      "expiryDate": "Date",
+      "NAFDAC": "NAF-d4a8f2n6a0c",
+      "netWeight": "23.0",
+      "type": "foreign",
+      "producer": "Oracle"
+    }
+  ],
+  "distributions": [
+    {
+      "id": 1,
+      "serialNumber": "j1s2o3n45s6e7r8v9e0r",
+      "source": "Boston",
+      "destination": "Califonia",
+      "movementDate": "Movement Date",
+      "arrivalDate": "Arrival Date",
+      "cusstodian": "Person"
+    },
+    {
+      "id": 2,
+      "serialNumber": "j1s2o3n45s6e7r8v9e0r",
+      "source": "Oregon",
+      "destination": "New York",
+      "movementDate": "Movement Date",
+      "arrivalDate": "Arrival Date",
+      "cusstodian": "Somebody"
+    },
+    {
+      "id": 3,
+      "serialNumber": "j1s2o3n45s6e7r8v9e0r",
+      "source": "Nigeria",
+      "destination": "Nigeria",
+      "movementDate": "Movement Date",
+      "arrivalDate": "Arrival Date",
+      "cusstodian": "People"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fname": "Allwell",
+      "lname": "Festus",
+      "companyName": "Harryland Clinic",
+      "email": "aleenfestus@gmail.com",
+      "password": "harryland-clinic"
+    },
+    {
+      "id": 2,
+      "fname": "Tekena",
+      "lname": "Solomon",
+      "companyName": "Qutex",
+      "email": "tekipeps@gmail.com",
+      "password": "tekipeps"
+    },
+    {
+      "id": 3,
+      "fname": "Kristian",
+      "lname": "Norman",
+      "companyName": "Kistan",
+      "email": "kristiannorman@gmail.com",
+      "password": "kristian-norman"
+    }
+  ]
+}

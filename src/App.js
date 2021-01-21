@@ -6,6 +6,8 @@ import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
+import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "./TermsOfService/TermsOfService";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Route exact path="/contact/" component={Contact} />
         <Route exact path="/login/" component={Login} />
         <Route exact path="/signup/" component={Signup} />
+        <Route exact path="/privacy-policy/" component={PrivacyPolicy} />
+        <Route exact path="/terms-of-service/" component={TermsOfService} />
       </Switch>
     </Router>
   );
