@@ -2,6 +2,10 @@ import React from "react";
 import NavBar from "../Components/NavBar/NavBar";
 import "./Trace.css";
 
+const Heading = ({ text }) => {
+  return <h1>{text}</h1>;
+};
+
 const InputField = ({
   divClassName,
   className,
@@ -35,6 +39,7 @@ const TraceButton = ({ divClassName, className, type, value }) => {
 const Form = ({ divClassName, method, action }) => {
   return (
     <form className={divClassName} method={method} action={action}>
+      <Heading text="Trace Drug" />
       <InputField
         divClassName="serial"
         className="serial"
