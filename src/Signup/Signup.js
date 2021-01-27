@@ -49,6 +49,12 @@ const LoginLink = ({ divClassName, className, toLink, value, text }) => {
           {text}
         </Link>
       </p>
+      |
+      <p>
+        <Link className={className} to={"/"}>
+          {"Home"}
+        </Link>
+      </p>
     </div>
   );
 };

@@ -145,8 +145,6 @@
   .signup-login-link-section {
   background-color: #f5f5f5cc;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   place-items: center;
   height: 10%;
@@ -160,6 +158,7 @@
   .signup-login-link-section
   .signup-login-link {
   color: #000000bb;
+  margin: 0 0.5em;
   text-decoration: none;
 }
 
