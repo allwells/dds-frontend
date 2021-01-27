@@ -18,34 +18,34 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link className="nav-links" to="/track">
-              Track
+            <Link className="nav-links" to="/trace/">
+              Trace
             </Link>
           </li>
           <li>
-            <Link className="nav-links" to="/services">
+            <Link className="nav-links" to="/services/">
               Service
             </Link>
           </li>
           <li>
-            <Link className="nav-links" to="/about">
+            <Link className="nav-links" to="/about/">
               About
             </Link>
           </li>
           <li>
-            <Link className="nav-links" to="/contact">
+            <Link className="nav-links" to="/contact/">
               Contact
             </Link>
           </li>
         </div>
         <div className="login-signup">
           <div className="login-btn-container">
-            <Link className="login-link" to="/login">
+            <Link className="login-link" to="/login/">
               Login
             </Link>
           </div>
           <div className="signup-btn-container">
-            <Link className="signup-link" to="/signup">
+            <Link className="signup-link" to="/signup/">
               Sign Up
             </Link>
           </div>

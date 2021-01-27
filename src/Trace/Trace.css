@@ -23,14 +23,14 @@
   height: 100%;
 }
 
-.track-bg-img .track-tint .serial {
+.track-bg-img .track-tint .trace-form .serial {
   display: flex;
   flex-direction: column;
   justify-content: center;
   place-items: center;
 }
 
-.track-bg-img .track-tint .serial .serial {
+.track-bg-img .track-tint .trace-form .serial .serial {
   height: 40px;
   width: 30%;
   text-align: center;
@@ -40,6 +40,30 @@
   border-radius: 3px;
 }
 
-.track-bg-img .track-tint .serial .serial:focus {
+.track-bg-img .track-tint .trace-form .serial .serial:focus {
   outline: none;
+}
+
+.track-bg-img .track-tint .trace-form .trace-btn {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+
+.track-bg-img .track-tint .trace-form .trace-btn .trace-btn {
+  height: 40px;
+  width: 10%;
+  border-radius: 3px;
+  border: none;
+  color: #00000099;
+  background-color: #bf8a0f;
+}
+
+.track-bg-img .track-tint .trace-form .trace-btn .trace-btn:hover {
+  color: #000000ee;
+  background-color: #e1a312;
+  transition-duration: 0.6s;
 }
