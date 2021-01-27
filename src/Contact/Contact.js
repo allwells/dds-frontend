@@ -71,6 +71,10 @@ const ContactContent = () => {
       <div className="form-bg">
         <OpenHours />
         <form className="contact-form" action="#contact-us-form" method="post">
+          <div className="leave-a-message">
+            <h1>Leave a Message</h1>
+            <div className="leave-a-message-line"> </div>
+          </div>
           <div className="input-fields-container">
             <div className="input-fields">
               <div className="name-container textfields">
