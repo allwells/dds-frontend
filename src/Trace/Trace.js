@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../Components/NavBar/NavBar";
-import "./Track.css";
+import "./Trace.css";
 
 const InputField = ({
   divClassName,
