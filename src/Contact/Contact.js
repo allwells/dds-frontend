@@ -15,15 +15,61 @@ const ContactHeader = () => {
   );
 };
 
+const OpenHours = () => {
+  return (
+    <div className="hour-layout">
+      <div className="hour-border">
+        <div className="headings">
+          <h3>COME ON IN</h3>
+          <h1>WE'ER OPEN</h1>
+        </div>
+        <div className="hours">
+          <div className="weekday">
+            <p>Sunday</p>
+            <p>Closed</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Monday</p>
+            <p>7:00 AM to 8:00 PM</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Tuesday</p>
+            <p>7:00 AM to 8:00 PM</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Wednesday</p>
+            <p>7:00 AM to 8:00 PM</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Thursday</p>
+            <p>7:00 AM to 8:00 PM</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Friday</p>
+            <p>7:00 AM to 8:00 PM</p>
+          </div>
+          <div className="weekday-line"></div>
+          <div className="weekday">
+            <p>Saturday</p>
+            <p>Closed</p>
+          </div>
+          <div className="weekday-line"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ContactContent = () => {
   return (
     <div>
       <div className="form-bg">
-        {/* <div className="working-hours-container">
-          <div className="working-hours">
-            <p></p>
-          </div>
-        </div> */}
+        <OpenHours />
         <form className="contact-form" action="#contact-us-form" method="post">
           <div className="input-fields-container">
             <div className="input-fields">

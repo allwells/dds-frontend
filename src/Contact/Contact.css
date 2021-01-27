@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
 .contact-header-padding {
   padding-top: 6em;
 }
@@ -57,7 +67,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
+  width: 80%;
 }
 
 .form-bg .contact-form .input-fields-container {
@@ -169,4 +179,73 @@
 .form-bg .contact-form .submit-btn .submit:active {
   box-shadow: 2px 2px 0px #000000dd;
   outline: none;
+}
+
+.form-bg .hour-layout {
+  background-color: #bf8a0f;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  padding: 0.3em;
+  border-radius: 3px;
+  margin-bottom: 8em;
+}
+
+.form-bg .hour-layout .hour-border {
+  background-color: #bf8a0f;
+  width: 100%;
+  border: 5px solid #ffffff;
+  border-radius: 3px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.form-bg .hour-layout .hour-border .headings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  padding: 1em 0;
+  margin-bottom: 2em;
+}
+
+.form-bg .hour-layout .hour-border .headings h1 {
+  font-weight: 100;
+  letter-spacing: 0.2em;
+  color: #000000bb;
+  margin-top: 0.6em;
+}
+
+.form-bg .hour-layout .hour-border .headings h3 {
+  font-weight: 100;
+  color: #000000bb;
+  letter-spacing: 0.2em;
+}
+
+.form-bg .hour-layout .hour-border .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 8em;
+}
+
+.form-bg .hour-layout .hour-border .hours .weekday {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #000000bb;
+  place-items: center;
+  height: 55px;
+}
+
+.form-bg .hour-layout .hour-border .hours .weekday-line {
+  background-color: #ffffff;
+  height: 2px;
+  width: 100%;
 }
