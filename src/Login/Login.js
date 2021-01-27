@@ -59,6 +59,12 @@ const SignupLink = ({ divClassName, className, toLink, value, text }) => {
           {text}
         </Link>
       </p>
+      |
+      <p>
+        <Link className={className} to={"/"}>
+          {"Home"}
+        </Link>
+      </p>
     </div>
   );
 };
@@ -110,6 +116,7 @@ const Form = ({ divClassName, method, action }) => {
         value="Not registered?"
         text="Sign Up"
       />
+      |
     </form>
   );
 };
