@@ -1,3 +1,14 @@
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito;
+}
+
 .img-bg {
   background-image: url("../drawables/gold-stripes.jpg");
   background-position: center;
@@ -121,7 +132,6 @@
 
 .img-bg .form-bg-tint .parent-layout .sub-parent-layout .forgot-pwd {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   place-items: center;
 }
@@ -135,7 +145,7 @@
   color: #000000aa;
   text-decoration: none;
   font-size: 12px;
-  margin: 0.5em 0;
+  margin: 0.7em 0.5em;
 }
 
 .img-bg

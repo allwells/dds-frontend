@@ -9,20 +9,22 @@ import Login from "./Login/Login";
 import Signup from "./Signup/Signup";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import TermsOfService from "./TermsOfService/TermsOfService";
+import Dashboard from "./Dashboard/Dashboard";
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/trace/" component={Trace} />
-        <Route exact path="/services/" component={Services} />
-        <Route exact path="/about/" component={About} />
-        <Route exact path="/contact/" component={Contact} />
-        <Route exact path="/login/" component={Login} />
-        <Route exact path="/signup/" component={Signup} />
-        <Route exact path="/privacy-policy/" component={PrivacyPolicy} />
-        <Route exact path="/terms-of-service/" component={TermsOfService} />
+        <Route exact path="/trace" component={Trace} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/privacy-policy" component={PrivacyPolicy} />
+        <Route exact path="/terms-of-service" component={TermsOfService} />
+        <Route exact path="/dashboard" component={Dashboard} />
       </Switch>
     </Router>
   );

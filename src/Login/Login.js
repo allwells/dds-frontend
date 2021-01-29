@@ -45,6 +45,10 @@ const ForgotPasswordLink = ({ divClassName, className, toLink, text }) => {
     <div className={divClassName}>
       <Link className={className} to={toLink}>
         {text}
+      </Link>{" "}
+      |
+      <Link className={className} to={"/"}>
+        {"Home"}
       </Link>
     </div>
   );
@@ -109,14 +113,13 @@ const Form = ({ divClassName, method, action }) => {
   return (
     <form className={divClassName} method={method} action={action}>
       <FormContents divClassName="sub-parent-layout" />
-      <SignupLink
+      {/* <SignupLink
         divClassName="signup-link-section"
         className="signup-link"
         toLink="/signup"
         value="Not registered?"
         text="Sign Up"
-      />
-      |
+      /> */}
     </form>
   );
 };
@@ -125,7 +128,7 @@ const LoginForm = () => {
   return (
     <div className="img-bg">
       <div className="form-bg-tint">
-        <Form divClassName="parent-layout" method="get" action="/login" />
+        <Form divClassName="parent-layout" method="get" action="/dashboard" />
       </div>
     </div>
   );

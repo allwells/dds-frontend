@@ -1,3 +1,14 @@
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito;
+}
+
 .signup-img-bg {
   background-image: url("../drawables/gold-stripes.jpg");
   background-position: center;

@@ -1,3 +1,14 @@
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito;
+}
+
 h1,
 h2,
 h3,
