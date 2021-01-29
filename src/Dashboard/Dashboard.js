@@ -6,26 +6,18 @@ import { Link } from "react-router-dom";
 const DashboardSideBar = () => {
   return (
     <div className="dashboard-sidebar">
-      <div className="link-container active">
-        <Link className="links" to="#">
-          Dashboard
-        </Link>
-      </div>
-      <div className="link-container">
-        <Link className="links" to="#">
-          Add Drug
-        </Link>
-      </div>
-      <div className="link-container">
-        <Link className="links" to="#">
-          Distribution
-        </Link>
-      </div>
-      <div className="link-container last-child">
-        <Link className="links" to="#">
-          Add User
-        </Link>
-      </div>
+      <Link className="links" to="/dashboard">
+        <div className="link-container active">Dashboard</div>
+      </Link>
+      <Link className="links" to="/add-drug">
+        <div className="link-container">Add Drug</div>
+      </Link>
+      <Link className="links" to="/distribution">
+        <div className="link-container">Distribution</div>
+      </Link>
+      <Link className="links" to="/add-user">
+        <div className="link-container">Add User</div>
+      </Link>
     </div>
   );
 };
@@ -44,8 +36,10 @@ const DashboardMainContent = () => {
 const DashboardMainLayout = () => {
   return (
     <div className="dashboard-main-layout">
-      <DashboardSideBar />
-      <DashboardMainContent />
+      <div className="dashboard-main-layout02">
+        <DashboardSideBar />
+        <DashboardMainContent />
+      </div>
     </div>
   );
 };

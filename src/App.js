@@ -10,6 +10,8 @@ import Signup from "./Signup/Signup";
 import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import TermsOfService from "./TermsOfService/TermsOfService";
 import Dashboard from "./Dashboard/Dashboard";
+import DrugDistribution from "./DrugDistribution/DrugDistribution";
+import AddDrug from "./AddDrug/AddDrug";
 
 const App = () => {
   return (
@@ -25,6 +27,9 @@ const App = () => {
         <Route exact path="/privacy-policy" component={PrivacyPolicy} />
         <Route exact path="/terms-of-service" component={TermsOfService} />
         <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/distribution" component={DrugDistribution} />
+        <Route exact path="/add-drug" component={AddDrug} />
+        {/* <Route exact path="/add-user" component={AddUser} /> */}
       </Switch>
     </Router>
   );
