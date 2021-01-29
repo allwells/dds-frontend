@@ -54,24 +54,24 @@ const ForgotPasswordLink = ({ divClassName, className, toLink, text }) => {
   );
 };
 
-const SignupLink = ({ divClassName, className, toLink, value, text }) => {
-  return (
-    <div className={divClassName}>
-      <p>
-        {value}{" "}
-        <Link className={className} to={toLink}>
-          {text}
-        </Link>
-      </p>
-      |
-      <p>
-        <Link className={className} to={"/"}>
-          {"Home"}
-        </Link>
-      </p>
-    </div>
-  );
-};
+// const SignupLink = ({ divClassName, className, toLink, value, text }) => {
+//   return (
+//     <div className={divClassName}>
+//       <p>
+//         {value}{" "}
+//         <Link className={className} to={toLink}>
+//           {text}
+//         </Link>
+//       </p>
+//       |
+//       <p>
+//         <Link className={className} to={"/"}>
+//           {"Home"}
+//         </Link>
+//       </p>
+//     </div>
+//   );
+// };
 
 const FormContents = ({ divClassName }) => {
   return (
