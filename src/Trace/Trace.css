@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: Nunito;
+  font-family: monospace;
 }
 
 .extra-padding {
@@ -73,6 +73,8 @@ body {
 
 .track-bg-img .track-tint .trace-form .serial .serial:focus {
   outline: none;
+  border: 2px solid #bf8a0fbb;
+  transition-duration: 1s;
 }
 
 .track-bg-img .track-tint .trace-form .trace-btn {
