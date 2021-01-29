@@ -18,8 +18,10 @@ body {
   width: 100%;
   height: fit-content;
   padding: 0 1em;
-  box-shadow: 0px 2px 6px #00000055;
+  box-shadow: 0px 2px 4px #00000055;
+  z-index: 2;
   height: 6em;
+  border-radius: 5px 5px 0 0;
 }
 
 .app-bar .logo {
@@ -49,4 +51,13 @@ body {
 
 .app-bar .logo .logo-txt:active {
   box-shadow: 2px 2px 0px #000000bb;
+}
+
+.app-bar .logout {
+  margin-right: 1em;
+}
+
+.app-bar .logout .logout-link {
+  text-decoration: none;
+  color: #000000bb;
 }

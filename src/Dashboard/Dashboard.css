@@ -14,3 +14,133 @@ body {
   height: 100vh;
   padding: 3em;
 }
+
+.dashboard-layout .dashboard-main02 {
+  box-shadow: 0px 0px 10px #afafaf;
+  z-index: 1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.dashboard-layout .dashboard-main02 .dashboard-main-layout {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.dashboard-layout .dashboard-main02 .dashboard-main-layout .dashboard-sidebar {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
+  border-radius: 0 0 0 5px;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-sidebar
+  .link-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-sidebar
+  .link-container:hover {
+  padding-left: 0.7em;
+  background-color: #e0e0e0;
+  transition-duration: 0.3s;
+  border-left: 5px solid #bf8a0f;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-sidebar
+  .active {
+  padding-left: 0.7em;
+  background-color: #e4d2a9;
+  border-left: 5px solid #bf8a0f;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-sidebar
+  .active:hover {
+  background-color: #e4d2a9;
+  color: #bf8a0f;
+  border-left: 5px solid #bf8a0f;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-sidebar
+  .link-container
+  .links {
+  text-decoration: none;
+  width: 100%;
+  padding-left: 1.6em;
+  color: #00000088;
+}
+
+.dashboard-layout .dashboard-main02 .dashboard-main-layout .dashboard-main {
+  width: 85%;
+  padding: 2em;
+  background-color: #e4d2a9;
+  border-radius: 0 0 5px 0;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-main
+  .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  background-color: #e4d2a9;
+  padding: 2em 4em;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00000033;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-main
+  .welcome
+  h1 {
+  font-weight: 300;
+  font-family: Nunito;
+  color: #000000bb;
+  font-size: 32px;
+  letter-spacing: 0.2em;
+}
+
+.dashboard-layout
+  .dashboard-main02
+  .dashboard-main-layout
+  .dashboard-main
+  .welcome
+  h3 {
+  font-weight: 200;
+  font-family: Nunito;
+  color: #000000bb;
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  margin-top: 0.5em;
+}
