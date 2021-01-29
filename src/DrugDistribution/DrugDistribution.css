@@ -125,7 +125,8 @@ body {
   .distribution-main {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  place-items: center;
   width: 100%;
   padding: 4em;
   background-color: #e1e1e1;
@@ -139,7 +140,8 @@ body {
   .distribution-form {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  place-items: center;
   width: 100%;
 }
 
@@ -152,7 +154,8 @@ body {
   .input-field {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  place-items: center;
   width: 100%;
 }
 
@@ -236,7 +239,8 @@ body {
   .submit-btn {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  place-items: center;
   width: 100%;
 }
 

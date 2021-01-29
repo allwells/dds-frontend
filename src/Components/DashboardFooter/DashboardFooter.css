@@ -1,0 +1,16 @@
+.dash-footer {
+  height: 10%;
+  width: 100%;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+}
+
+.dash-footer p {
+  letter-spacing: 0.3em;
+  font-family: Nunito;
+  font-size: 14px;
+  color: #00000088;
+}

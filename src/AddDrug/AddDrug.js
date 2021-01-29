@@ -1,6 +1,7 @@
 import React from "react";
 import "./AddDrug.css";
 import DashboardAppBar from "../Components/DashboardAppBar/DashboardAppBar";
+import DashboardFooter from "../Components/DashboardFooter/DashboardFooter";
 import { Link } from "react-router-dom";
 
 const InputField = ({ label, type, fieldName, className, fieldId }) => {
@@ -123,8 +124,11 @@ const DrugSideBar = () => {
       <Link className="links" to="/distribution">
         <div className="link-container">Distribution</div>
       </Link>
-      <Link className="links" to="/add-user">
+      {/* <Link className="links" to="/add-user">
         <div className="link-container">Add User</div>
+      </Link> */}
+      <Link className="links" to="/trace-drug">
+        <div className="link-container">Trace</div>
       </Link>
     </div>
   );
@@ -155,6 +159,7 @@ const AddDrug = () => {
       <div className="drug-main02">
         <DashboardAppBar />
         <DrugMainLayout />
+        <DashboardFooter />
       </div>
     </div>
   );

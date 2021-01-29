@@ -1,6 +1,7 @@
 import React from "react";
 import DashboardAppBar from "../Components/DashboardAppBar/DashboardAppBar";
 import "./Dashboard.css";
+import DashboardFooter from "../Components/DashboardFooter/DashboardFooter";
 import { Link } from "react-router-dom";
 
 const DashboardSideBar = () => {
@@ -15,8 +16,11 @@ const DashboardSideBar = () => {
       <Link className="links" to="/distribution">
         <div className="link-container">Distribution</div>
       </Link>
-      <Link className="links" to="/add-user">
+      {/* <Link className="links" to="/add-user">
         <div className="link-container">Add User</div>
+      </Link> */}
+      <Link className="links" to="/trace-drug">
+        <div className="link-container">Trace</div>
       </Link>
     </div>
   );
@@ -50,6 +54,7 @@ const Dashboard = () => {
       <div className="dashboard-main02">
         <DashboardAppBar />
         <DashboardMainLayout />
+        <DashboardFooter />
       </div>
     </div>
   );

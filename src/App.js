@@ -12,6 +12,7 @@ import TermsOfService from "./TermsOfService/TermsOfService";
 import Dashboard from "./Dashboard/Dashboard";
 import DrugDistribution from "./DrugDistribution/DrugDistribution";
 import AddDrug from "./AddDrug/AddDrug";
+import TraceDrug from "./TraceDrug/TraceDrug";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route exact path="/distribution" component={DrugDistribution} />
         <Route exact path="/add-drug" component={AddDrug} />
         {/* <Route exact path="/add-user" component={AddUser} /> */}
+        <Route exact path="/trace-drug" component={TraceDrug} />
       </Switch>
     </Router>
   );
