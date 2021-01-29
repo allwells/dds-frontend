@@ -35,7 +35,7 @@ body {
 .drug-layout .drug-main02 .drug-main-layout .drug-main-layout02 {
   display: flex;
   justify-content: center;
-  height: 80%;
+  height: 100%;
   width: 100%;
 }
 
