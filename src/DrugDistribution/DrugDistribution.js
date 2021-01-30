@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./DrugDistribution.css";
+import Services from "../Services/services";
 import DashboardAppBar from "../Components/DashboardAppBar/DashboardAppBar";
 import DashboardFooter from "../Components/DashboardFooter/DashboardFooter";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
-const InputField = ({ label, type, fieldName, className, fieldId }) => {
+const InputField = ({
+  label,
+  type,
+  fieldName,
+  className,
+  fieldId,
+  onChange,
+}) => {
   return (
     <div className="inputs">
       <label htmlFor={fieldId}>{label}</label>
-      <input type={type} name={fieldName} className={className} id={fieldId} />
+      <input
+        onChange={onChange}
+        type={type}
+        name={fieldName}
+        className={className}
+        id={fieldId}
+      />
     </div>
   );
 };
@@ -24,8 +39,33 @@ const Button = ({ divName, className, type, value }) => {
 };
 
 const DistributionForm = () => {
+  const initialState = {
+    serial_number: "",
+    source: "",
+    destination: "",
+    batch: 0,
+    low_range: 0,
+    high_range: 0,
+    start_date: "",
+    stop_date: "",
+    custodian: "",
+  };
+
+  const [formState, setFormState] = React.useState(initialState);
   return (
-    <form className="distribution-form" method="post" action="#">
+    <form
+      className="distribution-form"
+      onSubmit={async (event) => {
+        event.preventDefault();
+        console.log(formState);
+        const response = await axios.post(
+          "http://localhost:3001/api/distribution",
+          formState
+        );
+        const data = await response.json();
+        console.log(data);
+      }}
+    >
       <div className="dist-form-heading">
         <h1>Distribution</h1>
       </div>
@@ -36,6 +76,10 @@ const DistributionForm = () => {
           fieldName="serial"
           className="serial field"
           fieldId="serial"
+          value={formState.serial_number}
+          onChange={({ target }) => {
+            setFormState({ ...formState, serial_number: target.value });
+          }}
         />
         <InputField
           label="Source"
@@ -43,6 +87,10 @@ const DistributionForm = () => {
           fieldName="source"
           className="source field"
           fieldId="source"
+          value={formState.source}
+          onChange={({ target }) =>
+            setFormState({ ...formState, source: target.value })
+          }
         />
         <InputField
           label="Destination"
@@ -50,6 +98,10 @@ const DistributionForm = () => {
           fieldName="destination"
           className="destination field"
           fieldId="destination"
+          value={formState.destination}
+          onChange={({ target }) =>
+            setFormState({ ...formState, destination: target.value })
+          }
         />
 
         <InputField
@@ -58,6 +110,10 @@ const DistributionForm = () => {
           fieldName="batch"
           className="batch field"
           fieldId="batch"
+          value={formState.batch}
+          onChange={({ target }) =>
+            setFormState({ ...formState, batch: target.value })
+          }
         />
         <InputField
           label="Lowest Range"
@@ -65,6 +121,10 @@ const DistributionForm = () => {
           fieldName="low_range"
           className="low_range field"
           fieldId="low_range"
+          value={formState.low_range}
+          onChange={({ target }) =>
+            setFormState({ ...formState, low_range: target.value })
+          }
         />
         <InputField
           label="Highest Range"
@@ -72,6 +132,10 @@ const DistributionForm = () => {
           fieldName="high_range"
           className="high_range field"
           fieldId="high-range"
+          value={formState.high_range}
+          onChange={({ target }) =>
+            setFormState({ ...formState, high_range: target.value })
+          }
         />
         <InputField
           label="Departure Date"
@@ -79,6 +143,10 @@ const DistributionForm = () => {
           fieldName="departure"
           className="departure field"
           fieldId="departure"
+          value={formState.start_date}
+          onChange={({ target }) =>
+            setFormState({ ...formState, start_date: target.value })
+          }
         />
         <InputField
           label="Arrival Date"
@@ -86,6 +154,10 @@ const DistributionForm = () => {
           fieldName="arrival"
           className="arrival field"
           fieldId="arrival"
+          value={formState.stop_date}
+          onChange={({ target }) =>
+            setFormState({ ...formState, stop_date: target.value })
+          }
         />
         <InputField
           label="Moved By"
@@ -93,6 +165,10 @@ const DistributionForm = () => {
           fieldName="moved"
           className="moved field"
           fieldId="moved"
+          value={formState.custodian}
+          onChange={({ target }) =>
+            setFormState({ ...formState, custodian: target.value })
+          }
         />
         <Button
           divName="submit-btn"

@@ -30,7 +30,7 @@ const DashboardMainContent = () => {
   return (
     <div className="dashboard-main">
       <div className="welcome">
-        <h1>Welcome Allwell,</h1>
+        <h1>Welcome,</h1>
         <h3>what do you want to do today?</h3>
       </div>
     </div>

@@ -32,7 +32,7 @@ const TraceDrugForm = () => {
   return (
     <form className="tracedrug-form" method="post" action="#">
       <div className="tracedrug-form-heading">
-        <h1>Add Drug</h1>
+        <h1>Trace Drug</h1>
       </div>
       <div className="input-field">
         <InputField
