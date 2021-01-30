@@ -16,8 +16,8 @@ const Jumbotron = () => {
             <p>of drugs in Nigeria.</p>
           </div>
           <div className="get-started-container">
-            <Link className="get-started-link" to="/signup">
-              Get Started
+            <Link className="get-started-link" to="/trace">
+              Trace Drug
             </Link>
           </div>
         </div>

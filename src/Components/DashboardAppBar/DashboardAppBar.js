@@ -12,7 +12,7 @@ const DashboardAppBar = () => {
       </div>
       <div className="logo logout">
         <Link className="logout-link" to="/login">
-          <img src="logout.svg" alt=" " />
+          <img src="/logout.svg" alt=" " />
         </Link>
       </div>
     </nav>

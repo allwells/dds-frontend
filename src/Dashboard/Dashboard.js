@@ -10,16 +10,16 @@ const DashboardSideBar = () => {
       <Link className="links" to="/dashboard">
         <div className="link-container active">Dashboard</div>
       </Link>
-      <Link className="links" to="/add-drug">
+      <Link className="links" to="/dashboard/add-drug">
         <div className="link-container">Add Drug</div>
       </Link>
-      <Link className="links" to="/distribution">
+      <Link className="links" to="/dashboard/distribution">
         <div className="link-container">Distribution</div>
       </Link>
       {/* <Link className="links" to="/add-user">
         <div className="link-container">Add User</div>
       </Link> */}
-      <Link className="links" to="/trace-drug">
+      <Link className="links" to="/dashboard/trace">
         <div className="link-container">Trace</div>
       </Link>
     </div>

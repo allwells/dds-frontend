@@ -28,10 +28,14 @@ const App = () => {
         <Route exact path="/privacy-policy" component={PrivacyPolicy} />
         <Route exact path="/terms-of-service" component={TermsOfService} />
         <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/distribution" component={DrugDistribution} />
-        <Route exact path="/add-drug" component={AddDrug} />
+        <Route
+          exact
+          path="/dashboard/distribution"
+          component={DrugDistribution}
+        />
+        <Route exact path="/dashboard/add-drug" component={AddDrug} />
         {/* <Route exact path="/add-user" component={AddUser} /> */}
-        <Route exact path="/trace-drug" component={TraceDrug} />
+        <Route exact path="/dashboard/trace" component={TraceDrug} />
       </Switch>
     </Router>
   );

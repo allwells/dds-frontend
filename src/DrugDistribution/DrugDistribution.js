@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./DrugDistribution.css";
-import Services from "../Services/services";
+import service from "../Services/services";
 import DashboardAppBar from "../Components/DashboardAppBar/DashboardAppBar";
 import DashboardFooter from "../Components/DashboardFooter/DashboardFooter";
 import { Link } from "react-router-dom";
@@ -58,12 +58,7 @@ const DistributionForm = () => {
       onSubmit={async (event) => {
         event.preventDefault();
         console.log(formState);
-        const response = await axios.post(
-          "http://localhost:3001/api/distribution",
-          formState
-        );
-        const data = await response.json();
-        console.log(data);
+        const response = await service.createDist(formState);
       }}
     >
       <div className="dist-form-heading">
@@ -187,16 +182,16 @@ const DistributionSideBar = () => {
       <Link className="links" to="/dashboard">
         <div className="link-container">Dashboard</div>
       </Link>
-      <Link className="links" to="/add-drug">
+      <Link className="links" to="/dashboard/add-drug">
         <div className="link-container">Add Drug</div>
       </Link>
-      <Link className="links" to="/distribution">
+      <Link className="links" to="/dashboard/distribution">
         <div className="link-container active">Distribution</div>
       </Link>
       {/* <Link className="links" to="/add-user">
         <div className="link-container">Add User</div>
       </Link> */}
-      <Link className="links" to="/trace-drug">
+      <Link className="links" to="/dashboard/trace">
         <div className="link-container">Trace</div>
       </Link>
     </div>

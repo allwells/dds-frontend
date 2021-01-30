@@ -1,9 +1,8 @@
 import axios from "axios";
 
-const drugs = "http://localhost:3001/drugs";
-const distribution = "http://localhost:3001/distributions";
-const users = "http://localhost:3001/users";
-const DATABASE_URL = "mysql://root:@localhost:3306/dtracer_db?schema=public";
+const drugs = "http://localhost:3001/api/drug";
+const distribution = "http://localhost:3001/api/distribution";
+const users = "http://localhost:3001/api/user";
 
 //********************************** DRUGS ******************************//
 const getDrug = () => {
