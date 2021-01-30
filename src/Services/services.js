@@ -6,37 +6,43 @@ const users = "http://localhost:3001/users";
 const DATABASE_URL = "mysql://root:@localhost:3306/dtracer_db?schema=public";
 
 //********************************** DRUGS ******************************//
-const getDrugs = () => {
-  axios.get(drugs).then((res) => {
-    const drug = res.data;
-    console.log(drug);
-  });
+const getDrug = () => {
+  const req = axios.get(drugs);
+  return req.then((res) => res.data);
+};
+
+const createDrug = (newObject) => {
+  const request = axios.post(drugs, newObject);
+  return request.then((response) => response.data);
 };
 
 //********************************** DISTRIBUTION ******************************//
 const getDist = () => {
-  axios.get(distribution).then((res) => {
-    const dist = res.data;
-    console.log(dist);
-  });
+  const req = axios.get(distribution);
+  return req.then((res) => res.data);
 };
 
 const createDist = (newObject) => {
-  const request = axios.post(distribution, newObject);
-  return request.then((response) => response.data);
-};
-
-const updateDist = (id, newObject) => {
-  const request = axios.put(`${distribution}/${id}`, newObject);
-  return request.then((response) => response.data);
+  const req = axios.post(distribution, newObject);
+  return req.then((res) => res.data);
 };
 
 //********************************** USERS ******************************//
-const getUsers = () => {
-  axios.get(users).then((res) => {
-    const user = res.data;
-    console.log(user);
-  });
+const getUser = () => {
+  const req = axios.get(users);
+  return req.then((res) => res.data);
 };
 
-export default { getDist, createDist, updateDist };
+const createUser = (newObject) => {
+  const req = axios.post(users, newObject);
+  return req.then((res) => res.data);
+};
+
+export default {
+  getDrug,
+  getDist,
+  getUser,
+  createDrug,
+  createDist,
+  createUser,
+};
